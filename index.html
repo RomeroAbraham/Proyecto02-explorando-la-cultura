@@ -11,19 +11,34 @@
 <body>
 
     <header>
-        <section>
+        <div>
+            <img src="assets/images/juego_tradicional.jpg" alt="Imagen representativa de los juegos tradicionales" class="imagen-cabecera">            
             <h1> Juegos de Antes y de Ahora: "Un choque generacional en Guayaquil"</h1>
-            <p>La intención de está página es mostrar el anaálisis que llevamos a cabo sobre
+            <p>La intención de está página es mostrar el análisis que llevamos a cabo sobre
                 los juegos en distintas generaciones y como afecta la inseguridad del país actualmente
-                en la actividad de jugar y divertirse, motivando mas a encerrarse en las casas en vez
+                en la actividad de jugar y divertirse, motivando más a encerrarse en las casas en vez
                 de salir a la calle y jugar al aire libre.
             </p>
-            <img src="" alt="Imagen representativa de los juegos tradicionales">
-        </section>
+        </div>
+        <nav aria-label="Secciones" class="navegacion">
+            <ul>
+            <li><a href="#mapa">¿De dónde somos?</a></li>    
+            <li><a href="#hallazgos">Hallazgos</a></li>
+            <li><a href="#graficas">Gráficas</a></li>
+            <li><a href="#testimonios">Testimonios y Experiencias</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-        <section id="hallazgos">
+
+        <section class="seccion" id="mapa">
+            <h2>¿De dónde somos?</h2>
+            <p>Somos de guayaquil equisde</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255168.25681719143!2d-80.14491734913592!3d-2.1521492275105647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d13cbe855805f%3A0x8015a492f4fca473!2sGuayaquil!5e0!3m2!1sen!2sec!4v1791623346013!5m2!1sen!2sec" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </section>
+
+        <section class="seccion" id="hallazgos">
             <h2>Hallazgos de las entrevistas</h2>
             <article class="tarjeta-hallazgo">
                 <h3>Impacto de la seguridad</h3>
@@ -45,7 +60,16 @@
                 <p>Juegos como la rayuela, el trompo y las canicas han sido reemplazados casi por completo.</p>
             </article>
         </section>
-        <section id="testimonios">
+
+        <section class="seccion" id="graficas">
+            <h2>Las entrevistas en números</h2>
+            <div class="grafico">
+                <h3>¿Dónde jugaban en su infancia?</h3>
+                <canvas id="grafico-lugares"></canvas>
+            </div>
+        </section>
+
+        <section class="seccion" id="testimonios">
             <h2>Testimonios y Experiencias de la Comunidad</h2>
 
             <!-- Entrevistado 1: Paúl Pérez -->
@@ -95,10 +119,10 @@
 
             <!-- Entrevistada 4: Nancy Mora-->
             <article class="tarjeta-testimonio">
-                <img src="assets/images/foto_nancy_mora.jpg" alt="Fotografía anonimizada de Nancy Mora"
+                <img src="assets/images/foto_nancy.jpg" alt="Fotografía de Nancy Mora contestando a la entrevista"
                     class="imagen-testimonio">
                 <div class="tarjeta-cuerpo">
-                    <span class="etiqueta-edad">Mayores de 45 años</span>
+                    <span class="etiqueta-edad">60 años o más</span>
                     <h3>Nancy Mora</h3>
                     <blockquote>
                         "La diferencia es que nosotros no teníamos la necesidad de tener un juguete comprado; con lo que
@@ -110,10 +134,10 @@
 
             <!-- Entrevistada 5: Rocío Mora-->
             <article class="tarjeta-testimonio">
-                <img src="assets/images/foto_rocio_mora.jpg" alt="Fotografía anonimizada de Rocío Mora"
+                <img src="assets/images/foto_rocio.jpg" alt="Fotografía de Rocío Mora contestando a la entrevista"
                     class="imagen-testimonio">
                 <div class="tarjeta-cuerpo">
-                    <span class="etiqueta-edad">Mayores de 45 años</span>
+                    <span class="etiqueta-edad">45–59 años</span>
                     <h3>Rocío Mora</h3>
                     <blockquote>
                         "En mi infancia era más fácil porque los padres o abuelos salían a la calle a cuidarnos. Hoy los
@@ -142,7 +166,7 @@
 
             <!-- Entrevistado 7: Sebastián Escobar-->
             <article class="tarjeta-testimonio">
-                <img src="assets/images/foto_sebastians.jpg" alt="Fotografía anonimizada de Sebastián Escobar"
+                <img src="assets/images/foto_sebastian.jpg" alt="Fotografía del juego favorito de Sebastián Escobar"
                     class="imagen-testimonio">
                 <div class="tarjeta-cuerpo">
                     <span class="etiqueta-edad">18–29 años</span>
@@ -158,7 +182,7 @@
 
             <!-- Entrevistado 8: Gabriel -->
             <article class="tarjeta-testimonio">
-                <img src="assets/images/foto_gabriel.jpg" alt="Fotografía anonimizada de Gabriel Refe"
+                <img src="assets/images/foto_gabriel.jpg" alt="Fotografía del juego favorito de Gabriel Refe"
                     class="imagen-testimonio">
                 <div class="tarjeta-cuerpo">
                     <span class="etiqueta-edad">18–29 años</span>
@@ -174,7 +198,7 @@
 
             <!-- Entrevistado 9: Adrián -->
             <article class="tarjeta-testimonio">
-                <img src="assets/images/foto_adrian.jpg" alt="Fotografía anonimizada de Adrián"
+                <img src="assets/images/foto_juego_adrian.jpg" alt="Fotografía de uno de los juegos favoritos de Adrián"
                     class="imagen-testimonio">
                 <div class="tarjeta-cuerpo">
                     <span class="etiqueta-edad">18–29 años</span>
@@ -184,7 +208,7 @@
                         porque
                         es peligroso salir a cualquier hora."
                     </blockquote>
-                    <p class="juego-favorito"><strong>Juego favorito:</strong> Las quemadas / Fútbol</p>
+                    <p class="juego-favorito"><strong>Juego favorito:</strong> Las quemadas / Max Payne 3</p>
                 </div>
             </article>
 
@@ -206,13 +230,13 @@
 
             <!-- Entrevistada 11: Daniela -->
             <article class="tarjeta-testimonio">
-                <img src="assets/images/foto_daniela.jpg" alt="Fotografía anonimizada de Daniela"
+                <img src="assets/images/foto_daniela.jpg" alt="Fotografía del juguete favorito de Daniela"
                     class="imagen-testimonio">
                 <div class="tarjeta-cuerpo">
                     <span class="etiqueta-edad">Menor de 18 años</span>
                     <h3>Daniela</h3>
                     <blockquote>
-                        "Lo que más disfrutaba era imaginarte un mundo de fantasía al jugar. Pero ahora en la calle hay
+                        "Lo que más disfruto es imaginarme un mundo de fantasía al jugar. Pero ahora en la calle hay
                         muchos
                         ladrones."
                     </blockquote>
@@ -220,6 +244,41 @@
                 </div>
             </article>
         </section>
+
+        <section class="seccion" id="contacto">
+            <h2>Contactanos</h2>
+            <p> Escribenos tu experiencia!</p>
+            <form method="get" class="formulario">
+                <div class="columna-izq-contacto">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required autocomplete="name">
+                
+                    <label for="correo">Correo electrónico</label>
+                    <input type="email" id="correo" name="correo" required autocomplete="email">
+
+                    <label for="edad">Rango de edad</label>
+                    <select id="edad" name="edad">
+                    <option value="menor">Menor de 18</option>
+                    <option value="adulto-joven">18–29</option>
+                    <option value="adulto">30–44</option>
+                    <option value="adulto-mayor">45–59</option>
+                    <option value="tercera-edad">60 o más</option>
+                    <option value="sin-edad">Prefiero no decirlo</option>
+                </select>
+                </div>
+
+                <div class="columna-der-contacto">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" minlength="10" required></textarea>
+
+                    <label class="casilla">
+                    <input type="checkbox" name="acepto" required> Acepto ser contactado por correo
+                    </label>
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </section>
+
     </main>
 
     <footer>
